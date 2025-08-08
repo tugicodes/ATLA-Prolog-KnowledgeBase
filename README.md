@@ -31,5 +31,5 @@ A comprehensive knowledge base for *Avatar: The Last Airbender* universe, implem
 1. Install [SWI-Prolog](https://www.swi-prolog.org/download/stable)
 2. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/ATLA-Prolog-KB.git
+   git clone https://github.com/tugicodes/ATLA-Prolog-KB.git
    cd ATLA-Prolog-KB
