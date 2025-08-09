@@ -33,6 +33,7 @@ character(zuko, [
     skills([swordsmanship, lightning_redirection]),
     personality([intense, redeemed]),
     nation(fire_nation),
+    royalty,
     title([prince, fire_lord]),
     significant_event(joined_team_avatar)
 ]).
@@ -45,6 +46,7 @@ character(ozai, [
     title([fire_lord, phoenix_king]),
     personality([ruthless, ambitious]),
     nation(fire_nation),
+    royalty,
     significant_event(banished_zuko)
 ]).
 
@@ -55,6 +57,7 @@ character(azula, [
     skills([lightning_generation, blue_fire]),
     personality([manipulative, perfectionist]),
     nation(fire_nation),
+    royalty,
     title([princess]),
     significant_event(mental_breakdown)
 ]).
