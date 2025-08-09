@@ -15,7 +15,12 @@ demo :-
     write('   '), write(Avatars), nl, nl,
     
     write('b) Fire Nation Royals:'), nl,
-    findall(Name, character(Name, [firebender, fire_nation, royalty|_]), Royals),
+    findall(Name, 
+   (character(Name, Traits), 
+    member(firebender, Traits),
+    member(nation(fire_nation), Traits),
+    member(royalty, Traits)), 
+   Royals),
     write('   '), write(Royals), nl, nl,
     
     % 2. Bending Queries
