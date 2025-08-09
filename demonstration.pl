@@ -27,20 +27,24 @@ demo :-
     write('2. BENDING QUERIES'), nl, nl,
     
     write('a) Unique Bending Techniques:'), nl,
-    findall(Technique, (technique(Who, Technique), character(Who, _)), Techniques),
+    findall(Technique, (technique(Who, Technique, _), character(Who, _)), Techniques),
     sort(Techniques, UniqueTechs),
     write('   '), write(UniqueTechs), nl, nl,
     
     write('b) Who can bloodbend?'), nl,
-    findall(Name, (character(Name, [waterbender|_]), technique(Name, bloodbending)), Bloodbenders),
+    findall(Name, (character(Name, [waterbender|_]), technique(Name, bloodbending, _)), Bloodbenders),
     write('   '), write(Bloodbenders), nl, nl,
     
     % 3. Timeline Queries
     write('3. TIMELINE EVENTS'), nl, nl,
     
-    write('a) Major Events in Season 3:'), nl,
-    findall(Event, event(Event, [season(3)|_]), Season3Events),
-    write('   '), write(Season3Events), nl, nl,
+    write('a) All Major Events :'), nl,
+    findall(Event, event(Event, _), Events),
+    write('   '), write(Events), nl, nl,
+
+    write('b) Battles:'), nl,
+    findall(Battle, battle(Battle, _), Battles),
+    write('   '), write(Battles), nl, nl,
     
     write('=== END DEMO ==='), nl.
 
